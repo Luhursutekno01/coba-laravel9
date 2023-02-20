@@ -1,0 +1,88 @@
+html,
+#body {
+    height: 100%;
+}
+
+#content .container {
+    flex: 1 0 auto;
+}
+
+#footer {
+    flex-shrink: none;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-registration input {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+#homeCard .row .col-md-4:hover {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+#homeCard .row .col-md-4:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+#categoriesCard .row .col-md-4:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+#desAbout {
+    top: 25%;
+    position: relative;
+    font-weight: 900;
+    font-size: 50px;
+    border-right: 2px solid rgba(14, 13, 13, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    width: min-content;
+    text-align: center;
+    transform: translateY(-80%);
+    -webkit-animation: ketik 4s steps(30) normal both,
+        kedip 500ms steps(30) infinite normal;
+    animation: ketik 4s steps(30) normal both,
+        kedip 500ms steps(30) infinite normal;
+}
+
+@keyframes ketik {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes kedip {
+    from {
+        border-right-color: rgba(17, 17, 17, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+#titleAbout {
+    top: 20%;
+}
